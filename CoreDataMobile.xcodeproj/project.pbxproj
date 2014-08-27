@@ -22,6 +22,9 @@
 		A19CFC9019AD74AB001335AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19CFC6F19AD74AB001335AB /* UIKit.framework */; };
 		A19CFC9819AD74AB001335AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19CFC9619AD74AB001335AB /* InfoPlist.strings */; };
 		A19CFC9A19AD74AB001335AB /* CoreDataMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A19CFC9919AD74AB001335AB /* CoreDataMobileTests.m */; };
+		A19CFCA519AD7B23001335AB /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A19CFCA319AD7B23001335AB /* Test.xcdatamodeld */; };
+		A1B7ED5119AD890D00E7836C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B7ED5019AD890D00E7836C /* User.m */; };
+		A1B7ED5419AD8A9E00E7836C /* CDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B7ED5319AD8A9E00E7836C /* CDManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,11 @@
 		A19CFC9519AD74AB001335AB /* CoreDataMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataMobileTests-Info.plist"; sourceTree = "<group>"; };
 		A19CFC9719AD74AB001335AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A19CFC9919AD74AB001335AB /* CoreDataMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataMobileTests.m; sourceTree = "<group>"; };
+		A19CFCA419AD7B23001335AB /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
+		A1B7ED4F19AD890D00E7836C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A1B7ED5019AD890D00E7836C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A1B7ED5219AD8A9E00E7836C /* CDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDManager.h; sourceTree = "<group>"; };
+		A1B7ED5319AD8A9E00E7836C /* CDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,8 @@
 		A19CFC5F19AD74AB001335AB = {
 			isa = PBXGroup;
 			children = (
+				A1B7ED4F19AD890D00E7836C /* User.h */,
+				A1B7ED5019AD890D00E7836C /* User.m */,
 				A19CFC7119AD74AB001335AB /* CoreDataMobile */,
 				A19CFC9319AD74AB001335AB /* CoreDataMobileTests */,
 				A19CFC6A19AD74AB001335AB /* Frameworks */,
@@ -120,8 +130,11 @@
 				A19CFC8019AD74AB001335AB /* Main_iPad.storyboard */,
 				A19CFC8319AD74AB001335AB /* ViewController.h */,
 				A19CFC8419AD74AB001335AB /* ViewController.m */,
+				A19CFCA319AD7B23001335AB /* Test.xcdatamodeld */,
 				A19CFC8619AD74AB001335AB /* Images.xcassets */,
 				A19CFC7219AD74AB001335AB /* Supporting Files */,
+				A1B7ED5219AD8A9E00E7836C /* CDManager.h */,
+				A1B7ED5319AD8A9E00E7836C /* CDManager.m */,
 			);
 			path = CoreDataMobile;
 			sourceTree = "<group>";
@@ -253,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B7ED5119AD890D00E7836C /* User.m in Sources */,
 				A19CFC8519AD74AB001335AB /* ViewController.m in Sources */,
+				A1B7ED5419AD8A9E00E7836C /* CDManager.m in Sources */,
+				A19CFCA519AD7B23001335AB /* Test.xcdatamodeld in Sources */,
 				A19CFC7C19AD74AB001335AB /* AppDelegate.m in Sources */,
 				A19CFC7819AD74AB001335AB /* main.m in Sources */,
 			);
@@ -470,6 +486,7 @@
 				A19CFC9F19AD74AB001335AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A19CFCA019AD74AB001335AB /* Build configuration list for PBXNativeTarget "CoreDataMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -478,8 +495,22 @@
 				A19CFCA219AD74AB001335AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A19CFCA319AD7B23001335AB /* Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A19CFCA419AD7B23001335AB /* Test.xcdatamodel */,
+			);
+			currentVersion = A19CFCA419AD7B23001335AB /* Test.xcdatamodel */;
+			path = Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A19CFC6019AD74AB001335AB /* Project object */;
 }

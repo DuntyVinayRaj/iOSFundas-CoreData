@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CDManager.h"
 
 @interface ViewController ()
+
+
 
 @end
 
@@ -25,5 +28,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)readData:(id)sender {
+    
+    NSLog(@"Log : REsults fetched are - %@", [[CDManager sharedClient] getUserDataFromDB]);
+}
 
+- (IBAction)insertClicked:(id)sender {
+    
+    [[CDManager sharedClient] persistUserDetailsWithName:@"Rohit" withId:@"abdc1" withSalary:@(50000)];
+}
+
+
+- (IBAction)updateRecordClicked:(id)sender {
+    
+    [[CDManager sharedClient] updateUserForKey:@"salary" forValue:@(60000)];
+}
+
+
+- (IBAction)deleteRecordClicked:(id)sender {
+    
+    [[CDManager sharedClient] deleteUserEntity];
+    
+}
 @end
